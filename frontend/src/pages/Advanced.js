@@ -3,7 +3,7 @@ import './Advanced.css';
 
 import jsPDF from 'jspdf';
 
-const API_BASE = 'http://127.0.0.1:8000/api';
+const API_BASE = 'http://https://smartpdf-bge7.onrender.com/api';
 
 
 /* =========================================================
@@ -313,7 +313,7 @@ const ToolCard = ({
         );
 
         setDownloadUrl(
-          `http://127.0.0.1:8000${data.download_url}`
+          `http://https://smartpdf-bge7.onrender.com${data.download_url}`
         );
 
       }
