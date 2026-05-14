@@ -8,7 +8,11 @@ try:
     import win32com.client
 except ImportError:
     win32com = None
-import pythoncom
+
+try:
+    import pythoncom
+except ImportError:
+    pythoncom = None
 
 MEDIA_PATH = "media"
 os.makedirs(MEDIA_PATH, exist_ok=True)
