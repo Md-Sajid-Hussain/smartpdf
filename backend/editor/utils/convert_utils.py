@@ -4,7 +4,10 @@ import fitz  # PyMuPDF for PDF operations
 from PIL import Image
 from pdf2docx import Converter  # Keep this for PDF→Word
 from docx2pdf import convert     # Keep this for Word→PDF
-import win32com.client
+try:
+    import win32com.client
+except ImportError:
+    win32com = None
 import pythoncom
 
 MEDIA_PATH = "media"
