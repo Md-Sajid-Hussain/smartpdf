@@ -213,7 +213,7 @@ function EditorPage() {
       formData.append("insert_file", insertFile);
       formData.append("after_page", pageNum);
       
-      const response = await fetch('http://https://smartpdf-bge7.onrender.com/insert-pdf/', {
+      const response = await fetch('https://smartpdf-bge7.onrender.com/insert-pdf/', {
         method: 'POST',
         body: formData,
       });
@@ -347,7 +347,7 @@ function EditorPage() {
           formData.append("width", img.width);
           formData.append("height", img.height);
           
-          const imageResponse = await fetch('http://https://smartpdf-bge7.onrender.com/insert-image/', {
+          const imageResponse = await fetch('https://smartpdf-bge7.onrender.com/insert-image/', {
             method: 'POST',
             body: formData,
           });
@@ -414,7 +414,7 @@ function EditorPage() {
           formData.append("width", img.width);
           formData.append("height", img.height);
           
-          const imageResponse = await fetch('http://https://smartpdf-bge7.onrender.com/insert-image/', {
+          const imageResponse = await fetch('https://smartpdf-bge7.onrender.com/insert-image/', {
             method: 'POST',
             body: formData,
           });

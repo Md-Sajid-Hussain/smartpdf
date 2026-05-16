@@ -30,7 +30,7 @@ function ToolPage() {
     formData.append("file", file);
 
     const res = await fetch(
-      `http://https://smartpdf-bge7.onrender.com/api/${apiMap[name]}/`,
+      `https://smartpdf-bge7.onrender.com/api/${apiMap[name]}/`,
       {
         method: "POST",
         body: formData

@@ -1,6 +1,6 @@
 // Centralized API calls to Django backend
 
-const API_BASE_URL = 'http://https://smartpdf-bge7.onrender.com/api';
+const API_BASE_URL = 'https://smartpdf-bge7.onrender.com/api';
 
 // Helper function for API calls
 async function apiCall(endpoint, method, body, isFile = false) {

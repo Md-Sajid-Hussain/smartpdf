@@ -28,7 +28,7 @@ function MergePDF() {
     });
 
     try {
-      const res = await fetch(`http://https://smartpdf-bge7.onrender.com/api/merge-pdf/`, {
+      const res = await fetch(`https://smartpdf-bge7.onrender.com/api/merge-pdf/`, {
         method: "POST",
         body: formData,
       });

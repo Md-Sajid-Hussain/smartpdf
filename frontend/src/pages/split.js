@@ -68,7 +68,7 @@ function SplitPDF() {
     formData.append("pdf", selectedFile);
     
     try {
-      const response = await fetch("http://https://smartpdf-bge7.onrender.com/api/split/upload/", {
+      const response = await fetch("https://smartpdf-bge7.onrender.com/api/split/upload/", {
         method: "POST",
         body: formData
       });
@@ -113,7 +113,7 @@ function SplitPDF() {
     setShowSuggestions(false);
     
     try {
-      const response = await fetch("http://https://smartpdf-bge7.onrender.com/api/split/command/", {
+      const response = await fetch("https://smartpdf-bge7.onrender.com/api/split/command/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -142,8 +142,8 @@ function SplitPDF() {
           if (data.download_ready) {
             setShowDownload(true);
             setDownloadUrls({
-              pdf: `http://https://smartpdf-bge7.onrender.com/api/split/download/${sessionId}/pdf/`,
-              zip: `http://https://smartpdf-bge7.onrender.com/api/split/download/${sessionId}/zip/`
+              pdf: `https://smartpdf-bge7.onrender.com/api/split/download/${sessionId}/pdf/`,
+              zip: `https://smartpdf-bge7.onrender.com/api/split/download/${sessionId}/zip/`
             });
           }
           
