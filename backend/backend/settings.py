@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'your-secret-key'
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["smartpdf-bge7.onrender.com", "127.0.0.1", "localhost"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -51,6 +51,11 @@ TEMPLATES = [
     },
 ]
 CORS_ALLOW_ALL_ORIGINS = True
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://smartpdf-qsw.pages.dev",
+    "https://smartpdf-bge7.onrender.com",
+]
 
 ROOT_URLCONF = 'backend.urls'
 
